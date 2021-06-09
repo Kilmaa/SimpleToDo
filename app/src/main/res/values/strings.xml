@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">Simple To Do</string>
+    <string-array name="spinnerItems">
+        <item>Add a new task</item>
+        <item>Remove a task</item>
+    </string-array>
+    <string name="hintAdd">Type in a new task here</string>
+    <string name="hintRemove">Type in the index of the task to be removed</string>
     <string name="btnAdd">ADD</string>
+    <string name="btnDelete">DELETE</string>
     <string name="btnClear">CLEAR</string>
 
 </resources>

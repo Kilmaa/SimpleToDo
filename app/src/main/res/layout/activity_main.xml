@@ -7,11 +7,18 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/spinnerItems" />
+
     <EditText
-        android:id="@+id/editTextColour"
+        android:id="@+id/editTextItem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="@string/hintAdd"
         android:inputType="textPersonName" />
 
     <LinearLayout
@@ -21,15 +28,23 @@
 
         <Button
             android:id="@+id/buttonAdd"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/btnAdd"
             android:textSize="16sp" />
 
         <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btnDelete"
+            android:textSize="16sp" />
+
+        <Button
             android:id="@+id/buttonClear"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/btnClear"
